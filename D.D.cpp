@@ -8,26 +8,26 @@ int main()
     {
         int n;
         cin>>n;
+        int a[n],b[n];
         int c=0;
         for (int j=1; j<=n; j++)
         {
             //vai amar input neoya ai vul hocce
-            int a[n];
             cin>>a[j];
-            int b[n];
+
+        }
+        for (int j=1; j<=n; j++)
+        {
+            //vai amar input neoya ai vul hocce
             cin>>b[j];
-            if (a[j]>=1 && b[j]>=1)
+        }
+        for (int i=1; i<=n; i++)
+        {
+            if (a[i] >= 1 && b[i]>=1)
             {
                 c++;
             }
         }
-        if (c==0)
-        {
-            cout<<'0'<<endl;
-        }
-        else
-        {
-            cout<<c<<endl;
-        }
+        cout<<c<<endl;
     }
 }
