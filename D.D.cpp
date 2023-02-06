@@ -12,13 +12,11 @@ int main()
         int c=0;
         for (int j=1; j<=n; j++)
         {
-            //vai amar input neoya ai vul hocce
             cin>>a[j];
 
         }
         for (int j=1; j<=n; j++)
         {
-            //vai amar input neoya ai vul hocce
             cin>>b[j];
         }
         for (int i=1; i<=n; i++)
@@ -26,6 +24,14 @@ int main()
             if (a[i] >= 1 && b[i]>=1)
             {
                 c++;
+                if(a[i] ==0 || b[i] == 0)
+                {
+                    c=0;
+
+                }
+                //cout<<c<<endl;
+
+
             }
         }
         cout<<c<<endl;
